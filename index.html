@@ -38,7 +38,7 @@
         <!-- Header -->
         <div class="mb-4 border-b border-gray-200 pb-3 flex-none flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
             <div>
-                <h1 class="text-xl md:text-2xl font-bold text-gray-900 tracking-tight">Dashboard Penilaian Kelompok -  SI A Pagi</h1>
+                <h1 class="text-xl md:text-2xl font-bold text-gray-900 tracking-tight">Dashboard Penilaian Kelompok -  SI B Sore</h1>
                 <p class="text-xs text-gray-500 mt-0.5 font-medium">Dosen: Joy Nasten Sinaga, S.Kom., M.Kom.</p>
             </div>
             <div class="block md:hidden">
@@ -154,206 +154,182 @@
         // =========================================================================
         const dataKelompok = [
             {
-                nama: "Malaka Project",
-                topik: "Sistem Informasi Pendaftaran",
-                kontribusi: {
-                    htmlCss: 83.33,
-                    integrasi: 88,
-                    javascript: 80,
-                    git: 100
-                },
-                mahasiswa: [
-                    { nama: "Edy Kevin Feryanto Purba (K)", poin: 0 },
-                    { nama: "Ricky Yudianto", poin: 0 },
-                    { nama: "Malikul Sholeh Rangkuti", poin: 0 }
+                nama: "DARK WEB",
+                topik: "Sistem Informasi Reservasi Kamar Hotel",
+                kontribusi:{ htmlCss:86.67, integrasi:92, javascript:85, git:100 },
+                mahasiswa:[
+                    { nama:"Fandi Putra Yanggama (K)", poin:0 },
+                    { nama:"Angel Regina Syahputri", poin:5 },
+                    { nama:"Jessica", poin:0 },
+                    { nama:"Rizki Maulana Mandailing", poin:0 }
                 ],
-                feedback: {
-                    kelebihan: "Fitur aplikasi cukup lengkap, alur penggunaan jelas, serta implementasi JavaScript sudah baik.",
-                    kekurangan: "Validasi input dan struktur kode masih dapat ditingkatkan agar lebih modular.",
-                    saran: " Tambahkan error handling, optimalkan modularisasi, dan kurangi duplikasi kode.",
-                    kesimpulan: "Proyek menunjukkan pemahaman materi yang baik dan layak dikembangkan lebih lanjut."
+                feedback:{ kelebihan:"Desain profesional, fitur reservasi lengkap, serta implementasi JavaScript cukup matang.", kekurangan:"Beberapa fungsi masih dapat dipisahkan agar lebih modular dan validasi input dapat diperkuat.", saran:"Tambahkan dashboard admin, pencarian hotel, dan optimalkan struktur JavaScript.", kesimpulan:" Proyek memiliki kualitas implementasi di atas rata-rata dan layak dikembangkan lebih lanjut." }
+            },
+
+            {
+                nama:"Web Protagonist",
+                topik:"Sistem Informasi Reservasi Café",
+                kontribusi:{ htmlCss:86.67, integrasi:92, javascript:90, git:100 },
+                mahasiswa:[
+                    { nama:"Bernardo (K)", poin:1 },
+                    { nama:"Crish Jericho", poin:2 },
+                    { nama:"Valencia", poin:4 },
+                    { nama:"Viriani Angel", poin:5 }
+                ],
+                feedback:{ kelebihan:"Tema relevan, struktur aplikasi rapi, dan alur penyewaan berjalan dengan baik.", kekurangan:"Validasi input dan modularisasi JavaScript masih dapat ditingkatkan.", saran:"Tambahkan fitur pencarian, status, dan dashboard admin.", kesimpulan:"Proyek menunjukkan implementasi yang baik dengan potensi pengembangan yang besar." }
+            },
+
+            {
+                nama:"Gen Z",
+                topik:"Sistem Reservasi Dokter Berbasis Web",
+                kontribusi:{ htmlCss:80, integrasi:80, javascript:80, git:100 },
+                mahasiswa:[
+                    { nama:"Cindy Law (K)", poin:5 },
+                    { nama:"Chrestella Glacia", poin:0 },
+                    { nama:"Kenny Gilbert", poin:0 },
+                    { nama:"Randy Pratama", poin:0 }
+                ],
+                feedback:{ kelebihan:"Tema layanan kesehatan menarik, UI modern, dan penerapan JavaScript cukup baik.", kekurangan:"Struktur JavaScript masih dapat dibuat lebih modular dan validasi belum maksimal.", saran:"Tambahkan fitur autentikasi, dashboard layanan, serta error handling menggunakan try...catch.", kesimpulan:" Proyek menunjukkan pemahaman materi yang baik dengan peluang pengembangan yang cukup besar." }
+            },
+
+            {
+                nama:"Six Seven",
+                topik:"Sistem Informasi Reservasi Tiket Pesawat",
+                kontribusi:{ htmlCss:73.33, integrasi:72, javascript:80, git:100 },
+                mahasiswa:[
+                    { nama:"Charli (K)", poin:1 },
+                    { nama:"Delvin Lenzardo", poin:1 },
+                    { nama:"Nico Valendia", poin:1 },
+                    { nama:"Kendy Ongko", poin:1 },
+                    { nama:"Virgie Aprillia Wijaya", poin:1 }
+                ],
+                feedback:{ kelebihan:"Tampilan menarik, alur reservasi mudah dipahami, dan penggunaan localStorage sudah baik.", kekurangan:"Belum memanfaatkan metode JavaScript lanjutan seperti map() dan filter().", saran:"Tambahkan fitur jadwal layanan, ulasan pelanggan, serta modularisasi kode.", kesimpulan:"Proyek telah berjalan dengan baik dan masih memiliki ruang pengembangan dari sisi teknis." }
+            },
+
+            {
+                nama:"YNTKTS",
+                topik:"Sistem Informasi Pemesanan Makanan",
+                kontribusi:{ htmlCss:86.67, integrasi:80, javascript:70, git:100 },
+                mahasiswa:[
+                    { nama:"Hendri (K)", poin:3 },
+                    { nama:"Habel Xavier Christian", poin:0 },
+                    { nama:"Steven Ho", poin:2 },
+                    { nama:"Wada Genky Tanusli", poin:2 }
+                ],
+                feedback:{
+                kelebihan:"Alur pemesanan makanan jelas, penggunaan localStorage konsisten, dan struktur file cukup rapi.",
+                kekurangan:"Belum memanfaatkan map(), filter(), createElement(), serta error handling.",
+                saran:"Tambahkan fitur keranjang belanja, pencarian menu, dan modularisasi JavaScript.",
+                kesimpulan:"Proyek telah berjalan dengan baik sebagai sistem pemesanan makanan sederhana."
                 }
             },
 
             {
-                nama: "P2L",
-                topik: "Sistem Informasi Pengaduan Mahasiswa",
-                kontribusi: {
-                    htmlCss: 86.67,
-                    integrasi: 88,
-                    javascript: 85,
-                    git: 100
-                },
-                mahasiswa: [
-                    { nama: "Caroline Yuliana Simbolon (K)", poin: 0 },
-                    { nama: "Viona", poin: 0 },
-                    { nama: "Arinadhita Josephine Sidabungke", poin: 0 }
+                nama:"Pikirkan Secara Logika",
+                topik:"Website Sistem Informasi Lost and Found",
+                kontribusi:{ htmlCss:83.33, integrasi:88, javascript:75, git:100 },
+                mahasiswa:[
+                    { nama:"Vivian Angel Lika (K)", poin:0 },
+                    { nama:"Fredic Juniyo", poin:0 },
+                    { nama:"Jeffrey", poin:2 },
+                    { nama:"Reza Alfandi", poin:2 }
                 ],
-                feedback: {
-                    kelebihan: "Ide proyek menarik, relevan, dan berhasil menggabungkan edukasi dengan fitur interaktif. Konsep Video juga OKE!",
-                    kekurangan: "Validasi form dan pengelolaan error masih sederhana.",
-                    saran: "Tingkatkan modularisasi JavaScript, validasi input, dan fitur analitik.",
-                    kesimpulan: "Proyek kreatif dengan implementasi yang baik dan memiliki potensi pengembangan tinggi."
+                feedback:{
+                kelebihan:"Ide Lost & Found kreatif, penggunaan localStorage baik, dan alur aplikasi mudah dipahami.",
+                kekurangan:"Belum menggunakan map(), try...catch, serta validasi data masih sederhana.",
+                saran:"Tambahkan fitur upload gambar, pencarian lanjutan, dan modularisasi kode.",
+                kesimpulan:"Proyek sudah memenuhi tujuan pembelajaran dan masih berpotensi dikembangkan."
                 }
             },
 
             {
-                nama: "Syntax Sorcerers",
-                topik: "Sistem Informasi Pet Shop",
-                kontribusi: {
-                    htmlCss: 93.33,
-                    integrasi: 96,
-                    javascript: 90,
-                    git: 100
-                },
-                mahasiswa: [
-                    { nama: "Irvan Maruli Sihombing (K)", poin: -50 },
-                    { nama: "Irgi Al Fahrezi Nasution", poin: -50 },
-                    { nama: "Fadil Taufikkurrahman Harahap", poin: -50 },
-                    { nama: "Zidni Al Hafizh Razid", poin: -50 }
+                nama:"Meong Keren",
+                topik:"Katalog Buku Perpustakaan Mikroskil",
+                kontribusi:{ htmlCss:86.67, integrasi:88, javascript:90, git:100 },
+                mahasiswa:[
+                    { nama:"Evellyn Agustina (K)", poin:0 },
+                    { nama:"Davin Gonardi", poin:0 },
+                    { nama:"Jerrick Marvin", poin:0 },
+                    { nama:"Kevin", poin:-3 }
                 ],
-                feedback: {
-                    kelebihan: "Fitur sangat lengkap, dashboard informatif, serta implementasi JavaScript cukup matang.",
-                    kekurangan: "Seluruh logika masih berada dalam satu file dan belum terdapat error handling. SAYANGNYA, TIDAK TEPAT WAKTU SUBMIT, sehingga semua anggota terkena penalti.",
-                    saran: "Pisahkan JavaScript menjadi beberapa modul dan tambahkan validasi yang lebih komprehensif.",
-                    kesimpulan: "Salah satu proyek terbaik dengan implementasi fitur yang sangat baik. Namun, keterlambatan submit berdampak signifikan pada penilaian individu."
+                feedback:{
+                kelebihan:"Tema perpustakaan menarik, fitur CRUD berjalan baik, dan penggunaan localStorage sudah konsisten.",
+                kekurangan:"Belum memanfaatkan map(), createElement(), dan try...catch secara optimal. Dan, ada anggota tim dalam Video tidak mengenakan pakaian yang sesuai (tidak rapi/kaos).",
+                saran:"Tambahkan modularisasi JavaScript, validasi data yang lebih baik, serta fitur pencarian lanjutan. Dan lebih perhatikan penampilan saat presentasi.",
+                kesimpulan:"Proyek telah berjalan dengan baik dan menunjukkan pemahaman yang baik terhadap pengembangan aplikasi web."
                 }
             },
 
             {
-                nama: "Cloudy Crumbs",
-                topik: "Sistem Informasi Reservasi Sederhana",
-                kontribusi: {
-                    htmlCss: 80,
-                    integrasi: 88,
-                    javascript: 80,
-                    git: 100
-                },
-                mahasiswa: [
-                    { nama: "Nabilla Maulana Harahap (K)", poin: 0 },
-                    { nama: "Dementhia Signora Hasfiandri", poin: 0 },
-                    { nama: "M. Sarawanen", poin: 0 },
-                    { nama: "Nahdah Salsabila", poin: 0 }
+                nama:"Web Explorer",
+                topik:"Sistem Informasi Reservasi Studio Foto",
+                kontribusi:{ htmlCss:80, integrasi:80, javascript:65, git:100 },
+                mahasiswa:[
+                    { nama:"Phelyn Lie (K)", poin:0 },
+                    { nama:"Devina Jolin", poin:0 },
+                    { nama:"Jesslyn", poin:5 },
+                    { nama:"Angelica Putri", poin:0 },
+                    { nama:"Stanley Lim", poin:0 }
                 ],
-                feedback: {
-                    kelebihan: "Implementasi JavaScript sangat baik dengan pemanfaatan DOM Manipulation dan berbagai fungsi array.",
-                    kekurangan: "Struktur kode masih kurang modular dan validasi dapat ditingkatkan.",
-                    saran: "Pisahkan logika JavaScript menjadi beberapa fungsi yang lebih kecil dan tambahkan validasi input yang lebih komprehensif.",
-                    kesimpulan: "Proyek ini menunjukkan pemahaman dasar tentang penggunaan JavaScript, namun masih memerlukan peningkatan dalam hal struktur kode dan validasi."
+                feedback:{
+                kelebihan:"Tema photobooth menarik, tampilan sederhana, dan alur reservasi mudah dipahami.",
+                kekurangan:"Implementasi JavaScript masih sederhana dan belum memanfaatkan map() maupun try...catch.",
+                saran:"Tambahkan fitur jadwal reservasi, filter paket, dan interaksi JavaScript yang lebih dinamis.",
+                kesimpulan:"Proyek telah memenuhi kebutuhan dasar aplikasi reservasi dan masih dapat dikembangkan lebih lanjut."
                 }
             },
 
             {
-                nama: "TARFastic Coders",
-                topik: "Sistem Informasi Layanan dan Kegiatan Organisasi Mahasiswa",
-                kontribusi: {
-                    htmlCss: 83.33,
-                    integrasi: 84,
-                    javascript: 80,
-                    git: 100
-                },
-                mahasiswa: [
-                    { nama: "Fathur Rizky Ananda (K)", poin: 0 },
-                    { nama: "Anggie Pricilia Girsang", poin: 0 },
-                    { nama: "Febrian Winata", poin: 0 },
-                    { nama: "Kartika Damayani Saragih", poin: 0 }
+                nama:"Omakk",
+                topik:"Website Reservasi Ticket Bioskop",
+                kontribusi:{ htmlCss:83.33, integrasi:88, javascript:85, git:90 },
+                mahasiswa:[
+                    { nama:"Derick Danes (K)", poin:1 },
+                    { nama:"Felix Sun", poin:4 },
+                    { nama:"Leo Nardo", poin:0 }
                 ],
-                feedback: {
-                    kelebihan: "Tema relevan, alur aplikasi jelas, dan pemisahan hak akses pengguna cukup baik.",
-                    kekurangan: "Validasi serta error handling belum maksimal.",
-                    saran: "Tambahkan fitur pencarian, statistik, dan tingkatkan keamanan data.",
-                    kesimpulan: "Proyek berhasil memenuhi tujuan pembelajaran dengan implementasi yang baik, namun masih ada ruang untuk pengembangan lebih lanjut."
+                feedback:{
+                kelebihan:"Tema bioskop menarik, alur pemesanan jelas, serta telah memanfaatkan map(), filter(), dan createElement().",
+                kekurangan:"Belum menerapkan try...catch dan event handling masih dapat diperluas.",
+                saran:"Tambahkan pemilihan kursi, jadwal film, dan modularisasi JavaScript.",
+                kesimpulan:"Proyek berhasil mengimplementasikan konsep reservasi tiket dengan cukup baik."
                 }
             },
 
             {
-                nama: "PixelPair",
-                topik: "Katalog Produk Elektronik",
-                kontribusi: {
-                    htmlCss: 90,
-                    integrasi: 92,
-                    javascript: 85,
-                    git: 100
-                },
-                mahasiswa: [
-                    { nama: "Widya Ariani (K)", poin: 5 },
-                    { nama: "Narayani Silaban", poin: 0 }
+                nama:"CTRL + V",
+                topik:"Sistem Informasi Reservasi Barbershop",
+                kontribusi:{ htmlCss:83.33, integrasi:84, javascript:70, git:100 },
+                mahasiswa:[
+                    { nama:"Vincent Ivander Halim (K)", poin:5 },
+                    { nama:"Carlouis Tandinata", poin:0 },
+                    { nama:"Ivander Orlando Tanaka", poin:0 },
+                    { nama:"Wilyanto", poin:0 }
                 ],
-                feedback: {
-                    kelebihan: "Tema menarik, UI modern, dan fitur e-commerce cukup lengkap.",
-                    kekurangan: "JavaScript masih terpusat pada satu file dan validasi belum optimal.",
-                    saran: "Modularisasikan kode, tambahkan dashboard admin, dan optimalkan struktur program.",
-                    kesimpulan: "Proyek ini menunjukkan potensi yang baik, namun perlu peningkatan pada aspek struktur kode dan validasi."
+                feedback:{
+                kelebihan:"Tampilan sederhana, alur booking mudah dipahami, dan penggunaan localStorage sudah baik.",
+                kekurangan:"Implementasi JavaScript masih sederhana dan belum memanfaatkan map(), filter(), maupun try...catch.",
+                saran:"Tambahkan fitur jadwal barber, dashboard admin, serta modularisasi kode JavaScript.",
+                kesimpulan:"Proyek berfungsi dengan baik sebagai sistem reservasi dasar dan masih memiliki ruang pengembangan."
                 }
             },
 
             {
-                nama: "Kominfo",
-                topik: "Website Katalog",
-                kontribusi: {
-                    htmlCss: 86.67,
-                    integrasi: 88,
-                    javascript: 75,
-                    git: 100
-                },
-                mahasiswa: [
-                    { nama: "Joy Prima Kristanta Sembiring (K)", poin: -10 },
-                    { nama: "Andrean Hisar Rajagukguk", poin: -10 },
-                    { nama: "Kenzie Unyananda (2nd Submitter)", poin: -30 },
-                    { nama: "M. Qory Al-Fattah", poin: -10 }
+                nama:"Unknow",
+                topik:"Unknow",
+                kontribusi:{ htmlCss:33.33, integrasi:33.33, javascript:33.33, git:33.33 },
+                mahasiswa:[
+                    { nama:"Felicia", poin:0 }
                 ],
-                feedback: {
-                    kelebihan: "Konsep website bisnis cukup menarik dengan fitur katalog dan keranjang yang berjalan baik.",
-                    kekurangan: "Penggunaan JavaScript masih dapat dibuat lebih modular dan validasi masih sederhana.",
-                    saran: "Tambahkan fitur transaksi, riwayat pembelian, dan error handling.",
-                    kesimpulan: "Proyek telah memenuhi sebagian besar kebutuhan aplikasi berbasis web dengan baik, namun sayangnya pengumpulan tidak sesuai dengan ketentuan."
-                }
-            },
-
-            {
-                nama: "Coffee Project",
-                topik: "Website Katalog Produk Coffee",
-                kontribusi: {
-                    htmlCss: 80,
-                    integrasi: 80,
-                    javascript: 70,
-                    git: 80
-                },
-                mahasiswa: [
-                    { nama: "Felix Deoloren Hutauruk (K)", poin: 5 },
-                    { nama: "Jay Marshanda Sitompul", poin: -5 }
-                ],
-                feedback: {
-                    kelebihan: "Tampilan menarik, mudah digunakan, dan alur aplikasi sederhana namun jelas.",
-                    kekurangan: "Pemanfaatan JavaScript lanjutan masih terbatas dan fitur masih dapat dikembangkan.",
-                    saran: "Tambahkan filter, pencarian, keranjang belanja, serta modularisasi kode.",
-                    kesimpulan: "Proyek sudah memenuhi tujuan dasar pembelajaran dan memiliki potensi untuk dikembangkan lebih lanjut."
-                }
-            },
-
-            {
-                nama: "Syntax Error",
-                topik: "Website Sistem Informasi Management Event",
-                kontribusi: {
-                    htmlCss: 73.33,
-                    integrasi: 72,
-                    javascript: 80,
-                    git: 100
-                },
-                mahasiswa: [
-                    { nama: "Juan Dicky Lumban Tobing (K) (2nd Submitter)", poin: -30 },
-                    { nama: "Samuel Pedro Purba", poin: -10 },
-                    { nama: "Habib Rasyid Arrafi", poin: -10 },
-                    { nama: "Wahyu Abyan", poin: -10 }
-                ],
-                feedback: {
-                    kelebihan: " Fitur CRUD lengkap, dashboard informatif, serta implementasi JavaScript sangat baik.",
-                    kekurangan: "Struktur kode masih dapat dimodularisasi dan validasi data dapat diperkuat.",
-                    saran: " Tambahkan error handling, optimalkan manipulasi DOM, dan pisahkan fungsi berdasarkan tanggung jawab.",
-                    kesimpulan: "Proyek telah memenuhi sebagian besar kebutuhan aplikasi berbasis web dengan baik, namun sayangnya pengumpulan tidak sesuai dengan ketentuan."
+                feedback:{
+                kelebihan:"Tema reservasi hotel relevan. Ada kemauuan tetap mengerjakan walapuun sendiri.",
+                kekurangan:"Hanya HTML tok!",
+                saran:"Lebih meng-explore materi dan praktikkan semua materi yang sudah diajarkan.",
+                kesimpulan:"Proyek belum memenuhi tujuan pembelajaran dan perlu bimbingan lebih lanjut untuk pengembangan aplikasi web."
                 }
             }
-        ];
+
+            ];
 
         // =========================================================================
         // MANUAL ENTRY MULTI-KELOMPOK TERBAIK (BISA TAMBAH LEBIH DARI 1 KELOMPOK DI SINI)
@@ -362,24 +338,24 @@
             // Cukup isi array objek di bawah ini secara manual sesuka Anda
             const listBestGroups = [
                 {
-                    nama: "PixelPair",
-                    anggota: ["Widya Ariani ", "Narayani Silaban"],
+                    nama: "Web Protagonist",
+                    anggota: ["Bernardo", "Crish Jericho", "Valencia", "Viriani Angel"],
                     nilai: "91.67",
-                    linkWeb: "https://project-pixel-pair.vercel.app/",
+                    linkWeb: "https://crishjer20.github.io/First-Git/",
                     benefit: "UAS 100 (Free UAS)"
                 },
                 {
-                    nama: "P2L",
-                    anggota: ["Caroline Yuliana Simbolon", "Viona", "Arinadhita Josephine Sidabungke"],
-                    nilai: "89.17",
-                    linkWeb: "https://oyinlin.github.io/WASTE2WORTH-PROYEK-UAS-P2L",
+                    nama: "Dark Web",
+                    anggota: ["Fandi Putra Yanggama", "Angel Regina Syahputri", "Jessica", "Rizki Maulana Mandailing"],
+                    nilai: "90.83",
+                    linkWeb: "https://darkpalaceweb.netlify.app/",
                     benefit: "UAS Tambahan +50 Poin"
                 },
                 {
-                    nama: "Malaka Project",
-                    anggota: ["Edy Kevin Feryanto Purba", "Ricky Yudianto", "Malikul Sholeh Rangkuti"],
-                    nilai: "87.50",
-                    linkWeb: "https://malikcode17.github.io/SKPM_Malaka-Project/",
+                    nama: "Meong Keren",
+                    anggota: ["Evellyn Agustina", "Davin Gonardi", "Jerrick Marvin", "Kevin"],
+                    nilai: "90.00",
+                    linkWeb: "https://projek-katalog-buku-mikroskil.vercel.app/",
                     benefit: "UAS Tambahan +30 Poin"
                 }
             ];
